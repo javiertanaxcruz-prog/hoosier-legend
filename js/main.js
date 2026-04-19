@@ -177,6 +177,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const panelButtons = document.querySelectorAll("[data-panel-button]");
+  const panels = document.querySelectorAll("[data-panel]");
+
+  if (panelButtons.length && panels.length) {
+    const setActivePanel = (panelName) => {
+      panelButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.panelButton === panelName);
+      });
+
+      panels.forEach((panel) => {
+        panel.hidden = panel.dataset.panel !== panelName;
+      });
+    };
+
+    const initialButton =
+      Array.from(panelButtons).find((button) => button.classList.contains("active")) || panelButtons[0];
+
+    if (initialButton) {
+      setActivePanel(initialButton.dataset.panelButton);
+    }
+
+    panelButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setActivePanel(button.dataset.panelButton);
+      });
+    });
+  }
+
   const contactForm = document.querySelector("[data-contact-form]");
   const formSuccess = document.querySelector("[data-form-success]");
 
@@ -186,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const nameInput = contactForm.querySelector('input[name="name"]');
       const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : "Legend";
 
-      formSuccess.textContent = `Thanks, ${name}. Your message has been received by the Hoosier Legends athletics office. We'll be in touch soon.`;
+      formSuccess.textContent = `Thanks, ${name}. Your note has been logged for the Hoosier Legends conference site. We will review it soon.`;
       formSuccess.hidden = false;
       contactForm.reset();
     });

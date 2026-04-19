@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Track the Hoosier Legends game calendar with upcoming matchups, locations, and results across the athletic division.">
-  <title>Hoosier Legends | Schedule</title>
+  <meta name="description" content="Track Hoosier Legends conference standings and current leaders across football, boys basketball, volleyball, and softball.">
+  <title>Hoosier Legends Conference | Standings</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-schedule">
@@ -21,24 +21,24 @@
         </span>
         <span class="brand-copy">
           <strong>Hoosier Legends</strong>
-          <small>Athletic Division</small>
+          <small>Conference Portal</small>
         </span>
       </a>
 
       <nav class="site-nav" id="site-navigation" data-site-nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="roster.html">Schools</a></li>
           <li><a class="nav-link" href="sports.html">Sports</a></li>
-          <li><a class="nav-link" href="schedule.html" aria-current="page">Schedule</a></li>
-          <li><a class="nav-link" href="roster.html">Roster</a></li>
+          <li><a class="nav-link" href="schedule.html" aria-current="page">Standings</a></li>
           <li><a class="nav-link" href="news.html">News</a></li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a class="cta-button mobile-nav-cta" href="contact.html">Go Legends!</a>
+        <a class="cta-button mobile-nav-cta" href="roster.html">Member Schools</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="cta-button desktop-cta" href="contact.html">Go Legends!</a>
+        <a class="cta-button desktop-cta" href="roster.html">Member Schools</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open menu" data-menu-toggle>
           <span></span>
           <span></span>
@@ -51,16 +51,16 @@
   <main>
     <section class="inner-hero hero-schedule">
       <div class="container inner-hero-copy">
-        <span class="eyebrow">Events &amp; Schedule</span>
+        <span class="eyebrow">Standings &amp; Leaders</span>
         <h1 class="hero-title">
-          <span>Every Date</span>
-          <span>Matters</span>
+          <span>Real Boards.</span>
+          <span>Real Results.</span>
         </h1>
-        <p>The Legends calendar tracks the march from opening whistle to postseason weekend. Filter by month to find the next game, meet, or title chase.</p>
+        <p>Use the tabs below to jump through the current Hoosier Legends conference pages for football, boys basketball, volleyball, and softball.</p>
         <div class="metric-row">
-          <span class="metric-chip">10+ Events</span>
-          <span class="metric-chip">Home • Away • Neutral</span>
-          <span class="metric-chip">Results Updated</span>
+          <span class="metric-chip">Football Updated November 23, 2025</span>
+          <span class="metric-chip">Boys Basketball Updated March 27, 2026</span>
+          <span class="metric-chip">Softball Updated April 17, 2026</span>
         </div>
       </div>
     </section>
@@ -69,137 +69,449 @@
       <div class="container">
         <div class="section-header" data-reveal>
           <div>
-            <span class="eyebrow">Game Calendar</span>
-            <h2 class="section-title">Follow the Road to Hardware</h2>
-            <p class="section-copy">From conference clashes to showcase invitationals, every listed event keeps the Legends moving toward banner season.</p>
+            <span class="eyebrow">Conference Boards</span>
+            <h2 class="section-title">The Hoosier Legends Data Desk</h2>
+            <p class="section-copy">This page swaps the old schedule placeholder for a conference-style standings center inspired by the Hoosier Crossroads layout, but rebuilt around Hoosier Legends data.</p>
           </div>
         </div>
 
-        <div class="schedule-controls" data-reveal>
-          <div class="month-tabs">
-            <button class="tab-button active" type="button" data-month-filter="all">All</button>
-            <button class="tab-button" type="button" data-month-filter="oct">Oct</button>
-            <button class="tab-button" type="button" data-month-filter="nov">Nov</button>
-            <button class="tab-button" type="button" data-month-filter="dec">Dec</button>
-            <button class="tab-button" type="button" data-month-filter="jan">Jan</button>
-            <button class="tab-button" type="button" data-month-filter="feb">Feb</button>
-            <button class="tab-button" type="button" data-month-filter="mar">Mar</button>
-          </div>
-          <p class="schedule-note">Results are color-coded: gold for wins, crimson for losses, and gray for upcoming contests.</p>
+        <div class="tab-strip" data-reveal>
+          <button class="tab-button active" type="button" data-panel-button="football">Football</button>
+          <button class="tab-button" type="button" data-panel-button="basketball">Boys Basketball</button>
+          <button class="tab-button" type="button" data-panel-button="volleyball">Volleyball</button>
+          <button class="tab-button" type="button" data-panel-button="softball">Softball</button>
         </div>
 
-        <div class="schedule-shell" data-reveal>
-          <table class="schedule-table">
-            <thead>
-              <tr>
-                <th scope="col">Date</th>
-                <th scope="col">Sport</th>
-                <th scope="col">Opponent</th>
-                <th scope="col">Location</th>
-                <th scope="col">Home/Away</th>
-                <th scope="col">Result</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr data-schedule-row data-month="oct">
-                <td data-label="Date">Oct 11, 2025</td>
-                <td data-label="Sport">Football</td>
-                <td data-label="Opponent">Westfield Shamrocks</td>
-                <td data-label="Location">Legends Field</td>
-                <td data-label="Home/Away">Home</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-              <tr data-schedule-row data-month="oct">
-                <td data-label="Date">Oct 12, 2025</td>
-                <td data-label="Sport">Volleyball</td>
-                <td data-label="Opponent">Noblesville Millers</td>
-                <td data-label="Location">Noblesville Arena</td>
-                <td data-label="Home/Away">Away</td>
-                <td data-label="Result"><span class="status-pill status-win">Win 3-1</span></td>
-              </tr>
-              <tr data-schedule-row data-month="oct">
-                <td data-label="Date">Oct 14, 2025</td>
-                <td data-label="Sport">Soccer</td>
-                <td data-label="Opponent">Carmel Greyhounds</td>
-                <td data-label="Location">Sectional Final</td>
-                <td data-label="Home/Away">Neutral</td>
-                <td data-label="Result"><span class="status-pill status-loss">Loss 1-2</span></td>
-              </tr>
-              <tr data-schedule-row data-month="nov">
-                <td data-label="Date">Nov 8, 2025</td>
-                <td data-label="Sport">Boys Basketball</td>
-                <td data-label="Opponent">Fishers Tigers</td>
-                <td data-label="Location">Legends Arena</td>
-                <td data-label="Home/Away">Home</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-              <tr data-schedule-row data-month="nov">
-                <td data-label="Date">Nov 15, 2025</td>
-                <td data-label="Sport">Girls Basketball</td>
-                <td data-label="Opponent">Avon Orioles</td>
-                <td data-label="Location">Avon Fieldhouse</td>
-                <td data-label="Home/Away">Away</td>
-                <td data-label="Result"><span class="status-pill status-win">Win 58-44</span></td>
-              </tr>
-              <tr data-schedule-row data-month="dec">
-                <td data-label="Date">Dec 5, 2025</td>
-                <td data-label="Sport">Swimming</td>
-                <td data-label="Opponent">Hamilton Southeastern</td>
-                <td data-label="Location">Legends Aquatic Center</td>
-                <td data-label="Home/Away">Home</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-              <tr data-schedule-row data-month="dec">
-                <td data-label="Date">Dec 12, 2025</td>
-                <td data-label="Sport">Wrestling</td>
-                <td data-label="Opponent">Zionsville Eagles</td>
-                <td data-label="Location">Zionsville Gym</td>
-                <td data-label="Home/Away">Away</td>
-                <td data-label="Result"><span class="status-pill status-loss">Loss 27-31</span></td>
-              </tr>
-              <tr data-schedule-row data-month="jan">
-                <td data-label="Date">Jan 9, 2026</td>
-                <td data-label="Sport">Boys Basketball</td>
-                <td data-label="Opponent">Brownsburg Bulldogs</td>
-                <td data-label="Location">Legends Arena</td>
-                <td data-label="Home/Away">Home</td>
-                <td data-label="Result"><span class="status-pill status-win">Win 71-63</span></td>
-              </tr>
-              <tr data-schedule-row data-month="jan">
-                <td data-label="Date">Jan 22, 2026</td>
-                <td data-label="Sport">Girls Basketball</td>
-                <td data-label="Opponent">Center Grove Trojans</td>
-                <td data-label="Location">Center Grove HS</td>
-                <td data-label="Home/Away">Away</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-              <tr data-schedule-row data-month="feb">
-                <td data-label="Date">Feb 14, 2026</td>
-                <td data-label="Sport">Swimming</td>
-                <td data-label="Opponent">State Prelims</td>
-                <td data-label="Location">IU Natatorium</td>
-                <td data-label="Home/Away">Neutral</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-              <tr data-schedule-row data-month="mar">
-                <td data-label="Date">Mar 20, 2026</td>
-                <td data-label="Sport">Baseball</td>
-                <td data-label="Opponent">Plainfield Quakers</td>
-                <td data-label="Location">Legends Diamond</td>
-                <td data-label="Home/Away">Home</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-              <tr data-schedule-row data-month="mar">
-                <td data-label="Date">Mar 28, 2026</td>
-                <td data-label="Sport">Track &amp; Field</td>
-                <td data-label="Opponent">Hoosier Indoor Showcase</td>
-                <td data-label="Location">Indianapolis Sports Center</td>
-                <td data-label="Home/Away">Neutral</td>
-                <td data-label="Result"><span class="status-pill status-tbd">TBD</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <section class="panel-card" data-panel="football">
+          <div class="panel-layout">
+            <div>
+              <div class="table-shell">
+                <table class="standings-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Team</th>
+                      <th scope="col">Conf</th>
+                      <th scope="col">Overall</th>
+                      <th scope="col">PF</th>
+                      <th scope="col">PA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="team-name">Triton Central Tigers</span></td>
+                      <td><span class="record-strong">5-0</span></td>
+                      <td>10-2</td>
+                      <td>269</td>
+                      <td>176</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Tri-West Hendricks Bruins</span></td>
+                      <td><span class="record-strong">3-2</span></td>
+                      <td>7-4</td>
+                      <td>346</td>
+                      <td>252</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Indian Creek Braves</span></td>
+                      <td><span class="record-strong">3-2</span></td>
+                      <td>8-4</td>
+                      <td>398</td>
+                      <td>215</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Monrovia Bulldogs</span></td>
+                      <td><span class="record-strong">2-3</span></td>
+                      <td>4-7</td>
+                      <td>261</td>
+                      <td>339</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Beech Grove Hornets</span></td>
+                      <td><span class="record-strong">2-3</span></td>
+                      <td>4-7</td>
+                      <td>298</td>
+                      <td>187</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Speedway Sparkplugs</span></td>
+                      <td><span class="record-strong">0-5</span></td>
+                      <td>1-9</td>
+                      <td>112</td>
+                      <td>361</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="inline-table-note">Triton Central led conference points allowed at 72 in league games, while Indian Creek topped the full table in overall scoring at 398 points.</p>
+            </div>
+
+            <aside class="panel-aside">
+              <article class="leader-card">
+                <span class="eyebrow">Football Leaders</span>
+                <h3>Skill Positions</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Passing</span>
+                    <span class="leader-value">Jack Sorgi<br>Tri-West Hendricks | 2,911</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Rushing</span>
+                    <span class="leader-value">Braden Brown<br>Triton Central | 1,701</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Receiving</span>
+                    <span class="leader-value">Carter Cummings<br>Tri-West Hendricks | 1,044</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Points</span>
+                    <span class="leader-value">Drew Pingleton<br>Triton Central | 78</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="source-card">
+                <span class="eyebrow">More Leaders</span>
+                <h3>Defense &amp; Touchdowns</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Total TDs</span>
+                    <span class="leader-value">Caron Parks<br>Beech Grove | 22</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Tackles</span>
+                    <span class="leader-value">F. Wielbrenner<br>Triton Central | 159</span>
+                  </div>
+                </div>
+                <p class="source-note">Source: <a href="https://www.maxpreps.com/in/football/25-26/conference/hoosier-legends/?leagueid=77c8410e-6452-4e03-81e1-969a6cf5e6de" rel="noopener noreferrer" target="_blank">MaxPreps football conference page</a>.</p>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel-card" data-panel="basketball" hidden>
+          <div class="panel-layout">
+            <div>
+              <div class="table-shell">
+                <table class="standings-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Team</th>
+                      <th scope="col">Conf</th>
+                      <th scope="col">Overall</th>
+                      <th scope="col">PF</th>
+                      <th scope="col">PA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="team-name">Triton Central Tigers</span></td>
+                      <td><span class="record-strong">5-0</span></td>
+                      <td>23-4</td>
+                      <td>1482</td>
+                      <td>1207</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Tri-West Hendricks Bruins</span></td>
+                      <td><span class="record-strong">3-2</span></td>
+                      <td>14-11</td>
+                      <td>1444</td>
+                      <td>1330</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Speedway Sparkplugs</span></td>
+                      <td><span class="record-strong">3-2</span></td>
+                      <td>16-9</td>
+                      <td>1481</td>
+                      <td>1322</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Indian Creek Braves</span></td>
+                      <td><span class="record-strong">2-3</span></td>
+                      <td>10-14</td>
+                      <td>1292</td>
+                      <td>1298</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Beech Grove Hornets</span></td>
+                      <td><span class="record-strong">2-3</span></td>
+                      <td>10-14</td>
+                      <td>1417</td>
+                      <td>1376</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Monrovia Bulldogs</span></td>
+                      <td><span class="record-strong">0-5</span></td>
+                      <td>6-19</td>
+                      <td>1353</td>
+                      <td>1534</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="inline-table-note">Triton Central closed the conference race with the top record, while Speedway nearly matched the Tigers for total points scored.</p>
+            </div>
+
+            <aside class="panel-aside">
+              <article class="leader-card">
+                <span class="eyebrow">Boys Basketball Leaders</span>
+                <h3>Scoring and Playmaking</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Points / Game</span>
+                    <span class="leader-value">Drew Matelic<br>Speedway | 25.2</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Total Points</span>
+                    <span class="leader-value">Ryan Miller<br>Monrovia | 442</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Rebounds</span>
+                    <span class="leader-value">Bishop Moore<br>Indian Creek | 8.0</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Assists</span>
+                    <span class="leader-value">Bj Mastin<br>Beech Grove | 4.4</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="source-card">
+                <span class="eyebrow">More Leaders</span>
+                <h3>Defense</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Steals</span>
+                    <span class="leader-value">Drew Matelic<br>Speedway | 2.4</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Blocks</span>
+                    <span class="leader-value">Kendrick Kiser<br>Monrovia | 1.1</span>
+                  </div>
+                </div>
+                <p class="source-note">Source: <a href="https://www.maxpreps.com/in/basketball/25-26/conference/hoosier-legends/?leagueid=b8c44c53-f9f5-44f8-a336-372d9093a731" rel="noopener noreferrer" target="_blank">MaxPreps boys basketball conference page</a>.</p>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel-card" data-panel="volleyball" hidden>
+          <div class="panel-layout">
+            <div>
+              <div class="table-shell">
+                <table class="standings-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Team</th>
+                      <th scope="col">Conf</th>
+                      <th scope="col">Sets</th>
+                      <th scope="col">Overall</th>
+                      <th scope="col">Streak</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="team-name">Tri-West Hendricks Bruins</span></td>
+                      <td><span class="record-strong">6-0</span></td>
+                      <td>19-4</td>
+                      <td>24-13</td>
+                      <td>W7</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Indian Creek Braves</span></td>
+                      <td><span class="record-strong">5-1</span></td>
+                      <td>16-5</td>
+                      <td>17-15</td>
+                      <td>L1</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Triton Central Tigers</span></td>
+                      <td><span class="record-strong">4-2</span></td>
+                      <td>14-9</td>
+                      <td>15-18</td>
+                      <td>W1</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Speedway Sparkplugs</span></td>
+                      <td><span class="record-strong">3-3</span></td>
+                      <td>11-11</td>
+                      <td>16-13</td>
+                      <td>W1</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Monrovia Bulldogs</span></td>
+                      <td><span class="record-strong">2-4</span></td>
+                      <td>11-16</td>
+                      <td>15-19</td>
+                      <td>L4</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Beech Grove Hornets</span></td>
+                      <td><span class="record-strong">1-5</span></td>
+                      <td>6-17</td>
+                      <td>9-23</td>
+                      <td>L1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="inline-table-note">Tri-West cleared the field at 6-0 and held the best set differential in conference play, with Indian Creek finishing second at 5-1.</p>
+            </div>
+
+            <aside class="panel-aside">
+              <article class="leader-card">
+                <span class="eyebrow">Volleyball Leaders</span>
+                <h3>Attack and Setters</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Hit Percentage</span>
+                    <span class="leader-value">Addison Gibbs<br>Tri-West | .271</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Kills</span>
+                    <span class="leader-value">Caroline Ward<br>Tri-West | 681</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Assists</span>
+                    <span class="leader-value">Grace Hargis<br>Tri-West | 1,222</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Aces</span>
+                    <span class="leader-value">Gwyn Williams<br>Beech Grove | 95</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="source-card">
+                <span class="eyebrow">More Leaders</span>
+                <h3>Defense at the Net</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Blocks</span>
+                    <span class="leader-value">Blair Benner<br>Triton Central | 92</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Digs</span>
+                    <span class="leader-value">Finley Dakin<br>Triton Central | 498</span>
+                  </div>
+                </div>
+                <p class="source-note">Source: <a href="https://www.maxpreps.com/in/volleyball/25-26/conference/hoosier-legends/?leagueid=da147ff2-4626-4316-850d-4c927e158b5e" rel="noopener noreferrer" target="_blank">MaxPreps volleyball conference page</a>.</p>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel-card" data-panel="softball" hidden>
+          <div class="panel-layout">
+            <div>
+              <div class="table-shell">
+                <table class="standings-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Team</th>
+                      <th scope="col">Conf</th>
+                      <th scope="col">Overall</th>
+                      <th scope="col">RF</th>
+                      <th scope="col">RA</th>
+                      <th scope="col">Streak</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="team-name">Tri-West Hendricks Bruins</span></td>
+                      <td><span class="record-strong">3-1</span></td>
+                      <td>8-2</td>
+                      <td>75</td>
+                      <td>28</td>
+                      <td>W4</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Indian Creek Braves</span></td>
+                      <td><span class="record-strong">3-1</span></td>
+                      <td>8-1</td>
+                      <td>85</td>
+                      <td>28</td>
+                      <td>W6</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Triton Central Tigers</span></td>
+                      <td><span class="record-strong">3-1</span></td>
+                      <td>9-2</td>
+                      <td>97</td>
+                      <td>26</td>
+                      <td>W5</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Speedway Sparkplugs</span></td>
+                      <td><span class="record-strong">2-2</span></td>
+                      <td>4-6</td>
+                      <td>76</td>
+                      <td>84</td>
+                      <td>L2</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Beech Grove Hornets</span></td>
+                      <td><span class="record-strong">1-3</span></td>
+                      <td>7-3</td>
+                      <td>91</td>
+                      <td>28</td>
+                      <td>W5</td>
+                    </tr>
+                    <tr>
+                      <td><span class="team-name">Monrovia Bulldogs</span></td>
+                      <td><span class="record-strong">0-4</span></td>
+                      <td>0-8</td>
+                      <td>4</td>
+                      <td>145</td>
+                      <td>L8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="inline-table-note">The spring race is tight at the top, with Tri-West, Indian Creek, and Triton Central all sharing first at 3-1 in conference play.</p>
+            </div>
+
+            <aside class="panel-aside">
+              <article class="leader-card">
+                <span class="eyebrow">Softball Leaders</span>
+                <h3>Best Bats in the League</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">Batting Avg</span>
+                    <span class="leader-value">Delaney Jones<br>Indian Creek | .674</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Home Runs</span>
+                    <span class="leader-value">Addison Corn<br>Beech Grove | 8</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Slugging</span>
+                    <span class="leader-value">Ashlyn Hittle<br>Indian Creek | 1.280</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">RBI</span>
+                    <span class="leader-value">Delaney Jones<br>Indian Creek | 22</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="source-card">
+                <span class="eyebrow">More Leaders</span>
+                <h3>On Base and Runs</h3>
+                <div class="leader-list">
+                  <div class="leader-item">
+                    <span class="leader-label">On-Base %</span>
+                    <span class="leader-value">Delaney Jones<br>Indian Creek | .708</span>
+                  </div>
+                  <div class="leader-item">
+                    <span class="leader-label">Runs</span>
+                    <span class="leader-value">Addie Schaub<br>Beech Grove | 16</span>
+                  </div>
+                </div>
+                <p class="source-note">Source: <a href="https://www.maxpreps.com/in/softball/25-26/conference/hoosier-legends/?leagueid=6c20ca4c-0315-4ba6-a2e6-22b212a89910" rel="noopener noreferrer" target="_blank">MaxPreps softball conference page</a>.</p>
+              </article>
+            </aside>
+          </div>
+        </section>
       </div>
     </section>
   </main>
@@ -216,16 +528,17 @@
           </span>
           <span class="brand-copy">
             <strong>Hoosier Legends</strong>
-            <small>Athletic Division</small>
+            <small>Conference Portal</small>
           </span>
         </a>
-        <p class="footer-copy">Where Indiana toughness meets championship ambition.</p>
+        <p class="footer-copy">A cleaner conference-style standings center shaped by Hoosier Legends data and Hoosier-state energy.</p>
         <div>
           <h2 class="footer-title">Quick Links</h2>
           <ul class="footer-list">
             <li><a href="index.html">Home</a></li>
+            <li><a href="roster.html">Schools</a></li>
             <li><a href="sports.html">Sports</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="schedule.html">Standings</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -233,43 +546,32 @@
       </div>
 
       <div class="footer-column">
-        <h2 class="footer-title">Sports</h2>
+        <h2 class="footer-title">Member Schools</h2>
         <ul class="footer-list">
-          <li><a href="sports.html">Football</a></li>
-          <li><a href="sports.html">Basketball</a></li>
-          <li><a href="sports.html">Soccer</a></li>
-          <li><a href="sports.html">Track &amp; Field</a></li>
-          <li><a href="sports.html">Wrestling</a></li>
-          <li><a href="sports.html">Volleyball</a></li>
+          <li><a href="roster.html#triton-central">Triton Central</a></li>
+          <li><a href="roster.html#tri-west">Tri-West Hendricks</a></li>
+          <li><a href="roster.html#indian-creek">Indian Creek</a></li>
+          <li><a href="roster.html#monrovia">Monrovia</a></li>
+          <li><a href="roster.html#beech-grove">Beech Grove</a></li>
+          <li><a href="roster.html#speedway">Speedway</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h2 class="footer-title">Social Media</h2>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.2V10H8v3h2.6v8h2.9Z" fill="currentColor"/>
-            </svg>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 2.2A1.8 1.8 0 0 0 5.2 7v10c0 1 .8 1.8 1.8 1.8h10c1 0 1.8-.8 1.8-1.8V7c0-1-.8-1.8-1.8-1.8H7Zm10.2 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.1a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Z" fill="currentColor"/>
-            </svg>
-          </a>
-          <a href="#" aria-label="Twitter or X">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M18.9 3H21l-4.7 5.4L22 21h-4.6l-3.6-4.7L9.7 21H7.6l5.1-5.8L2 3h4.7l3.2 4.2L13.7 3h2.1ZM18.2 19l-9-11.9H5.8l9 11.9h3.4Z" fill="currentColor"/>
-            </svg>
-          </a>
-        </div>
+        <h2 class="footer-title">Data &amp; Resources</h2>
+        <ul class="footer-list">
+          <li><a class="is-external" href="https://www.maxpreps.com/in/football/25-26/conference/hoosier-legends/?leagueid=77c8410e-6452-4e03-81e1-969a6cf5e6de" rel="noopener noreferrer" target="_blank">Football Standings</a></li>
+          <li><a class="is-external" href="https://www.maxpreps.com/in/basketball/25-26/conference/hoosier-legends/?leagueid=b8c44c53-f9f5-44f8-a336-372d9093a731" rel="noopener noreferrer" target="_blank">Boys Basketball</a></li>
+          <li><a class="is-external" href="https://www.maxpreps.com/in/volleyball/25-26/conference/hoosier-legends/?leagueid=da147ff2-4626-4316-850d-4c927e158b5e" rel="noopener noreferrer" target="_blank">Volleyball</a></li>
+          <li><a class="is-external" href="https://www.maxpreps.com/in/softball/25-26/conference/hoosier-legends/?leagueid=6c20ca4c-0315-4ba6-a2e6-22b212a89910" rel="noopener noreferrer" target="_blank">Softball</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>© 2025 Hoosier Legends Athletic Division. All Rights Reserved.</p>
-        <p>Built in Indiana. Bred to Win.</p>
+        <p>&copy; 2026 Hoosier Legends Conference Site. All Rights Reserved.</p>
+        <p>Standings first. Hype second.</p>
       </div>
     </div>
   </footer>

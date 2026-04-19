@@ -1403,6 +1403,400 @@ body.menu-open .menu-toggle span:nth-child(3) {
   font-size: 0.95rem;
 }
 
+.conference-link-grid,
+.highlight-grid,
+.school-grid,
+.resource-grid,
+.story-grid,
+.spotlight-grid,
+.sports-note-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.conference-link {
+  padding: 1.1rem 1.15rem;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-radius: var(--radius-md);
+  background: #fffdf7;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.conference-link:hover,
+.school-card:hover,
+.resource-card:hover,
+.leader-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(201, 168, 76, 0.55);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+}
+
+.conference-link strong,
+.school-card h3,
+.leader-card h3,
+.resource-card h3,
+.story-card h3 {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.95rem, 5vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.conference-link span,
+.resource-card p,
+.story-card p,
+.school-card p,
+.leader-card p,
+.source-note {
+  color: var(--color-muted);
+}
+
+.data-pill,
+.school-pill,
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(139, 0, 0, 0.08);
+  border: 1px solid rgba(139, 0, 0, 0.12);
+  color: var(--color-crimson);
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.meta-chip {
+  background: rgba(201, 168, 76, 0.12);
+  border-color: rgba(201, 168, 76, 0.16);
+  color: var(--color-gold);
+}
+
+.section-stack {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.table-shell,
+.leader-card,
+.school-card,
+.resource-card,
+.story-card,
+.source-card {
+  border: 1px solid rgba(13, 13, 13, 0.08);
+  border-radius: var(--radius-md);
+  background: #fffdf7;
+  box-shadow: var(--shadow-soft);
+}
+
+.table-shell {
+  overflow: auto;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.standings-table thead {
+  background: linear-gradient(135deg, var(--color-black), #2a2a2a);
+  color: var(--color-off-white);
+}
+
+.standings-table th {
+  padding: 0.95rem 1rem;
+  text-align: left;
+  font-family: var(--font-accent);
+  font-size: 0.84rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.standings-table td {
+  padding: 0.95rem 1rem;
+  border-top: 1px solid rgba(13, 13, 13, 0.08);
+  vertical-align: top;
+}
+
+.standings-table tbody tr:hover {
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.team-name {
+  font-weight: 700;
+}
+
+.record-strong {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.leader-card,
+.school-card,
+.resource-card,
+.story-card,
+.source-card {
+  padding: 1.25rem;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.leader-list,
+.resource-list,
+.school-list,
+.source-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.leader-item,
+.resource-list li,
+.school-list li,
+.source-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(13, 13, 13, 0.08);
+}
+
+.leader-item:last-child,
+.resource-list li:last-child,
+.school-list li:last-child,
+.source-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.leader-label,
+.resource-list strong,
+.school-list strong,
+.source-list strong {
+  color: var(--color-black);
+  font-family: var(--font-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.leader-value {
+  text-align: right;
+}
+
+.source-note {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+}
+
+.source-note a {
+  color: var(--color-crimson);
+  text-decoration: underline;
+}
+
+.highlight-grid {
+  align-items: start;
+}
+
+.hero-summary-card {
+  padding: 1.4rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(245, 245, 240, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-strong);
+}
+
+.hero-summary-card h2 {
+  margin: 0.35rem 0 0.8rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.hero-summary-card p,
+.hero-summary-card li {
+  color: rgba(245, 245, 240, 0.82);
+}
+
+.hero-summary-card ul {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.hero-summary-card li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.hero-summary-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-gold);
+}
+
+.school-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.school-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 0.9rem;
+}
+
+.school-header p {
+  margin-top: 0.25rem;
+}
+
+.school-record {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.95rem 0 1rem;
+}
+
+.record-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.record-line span:last-child {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.card-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.sports-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.9rem;
+}
+
+.sports-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.sport-card .sports-legend span {
+  color: rgba(245, 245, 240, 0.78);
+}
+
+.story-card {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.story-date {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.story-card .tag-list {
+  margin-top: 0.2rem;
+}
+
+.tab-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.panel-card[hidden] {
+  display: none;
+}
+
+.panel-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.panel-aside {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.resource-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.resource-list a,
+.school-list a {
+  color: var(--color-crimson);
+}
+
+.directory-card a {
+  color: var(--color-crimson);
+  text-decoration: underline;
+}
+
+.inline-table-note {
+  margin-top: 0.85rem;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.schools-callout {
+  display: grid;
+  gap: 1rem;
+  padding: 1.3rem;
+  border-radius: var(--radius-md);
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.schools-callout h3,
+.panel-aside h3,
+.source-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.schools-callout p,
+.schools-callout li,
+.source-card p {
+  color: var(--color-muted);
+}
+
+.source-card {
+  background: #f9f7ef;
+}
+
+.footer-list .is-external::after {
+  content: " ->";
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -1480,6 +1874,14 @@ body.menu-open .menu-toggle span:nth-child(3) {
   .sidebar-story {
     grid-template-columns: 140px 1fr;
   }
+
+  .conference-link-grid,
+  .highlight-grid,
+  .story-grid,
+  .spotlight-grid,
+  .sports-note-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 900px) {
@@ -1501,6 +1903,10 @@ body.menu-open .menu-toggle span:nth-child(3) {
 
   .footer-grid {
     grid-template-columns: 1.3fr 1fr 1fr;
+  }
+
+  .panel-layout {
+    grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.7fr);
   }
 }
 
@@ -1548,6 +1954,10 @@ body.menu-open .menu-toggle span:nth-child(3) {
   .sport-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .conference-link-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1120px) {
@@ -1564,6 +1974,12 @@ body.menu-open .menu-toggle span:nth-child(3) {
   }
 
   .coach-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .highlight-grid,
+  .story-grid,
+  .spotlight-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
